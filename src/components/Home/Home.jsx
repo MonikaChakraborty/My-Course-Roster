@@ -9,6 +9,8 @@ import Cart from '../Cart/Cart';
 const Home = () => {
     const [allCourses, setAllCourses] = useState([]);
     const [selectedCourses, setSelectedCourses] = useState([]);
+    const [totalCredit, setTotalCredit] = useState(0);
+    const [remaining, setRemaining] = useState(0);
 
 
     useEffect(() => {
@@ -20,9 +22,23 @@ const Home = () => {
     const handleSelectCourse = (course) => {
         // console.log(...selectedCourses)
         const isExist = selectedCourses.find(item => item.course_name == course.course_name);
+
+        let count = course.credit;
         if(isExist){
             return alert('Already selected');
         }else{
+
+            selectedCourses.forEach(item => {
+                count = count + item.credit;
+            })
+            // console.log(count);
+            const creditRemaining = 20-count;
+
+            if(count>20){
+                return alert ("not granted");
+            }
+            setTotalCredit(count);
+            setRemaining(creditRemaining);
             setSelectedCourses([...selectedCourses, course]);
         }
         
@@ -60,7 +76,7 @@ const Home = () => {
                 </div>
 
                 <div className="cart-container">
-                    <Cart selectedCourses={selectedCourses}></Cart>
+                    <Cart selectedCourses={selectedCourses} totalCredit={totalCredit} remaining={remaining}></Cart>
                 </div>
 
             </div>

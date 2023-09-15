@@ -4,12 +4,14 @@ import React from 'react';
 import './Cart.css';
 
 
-const Cart = ({selectedCourses}) => {
+const Cart = ({selectedCourses, totalCredit, remaining}) => {
     console.log(selectedCourses)
     return (
         <div className='cart'>
+            <h4 className='credit-remaining-text'>Credit Hour Remaining {remaining} hr</h4>
+            <hr />
             <h4 className='cart-title'>Course Name:</h4>
-            <ol>
+            <ol className='names'>
                 {
                     selectedCourses.map((course, index) => (
                         <li  className='ol-list' key={index}>{course.course_name}</li>
@@ -18,7 +20,8 @@ const Cart = ({selectedCourses}) => {
             </ol>
 
             <hr />
-            <h4>Total Credit Hour: </h4>
+            <h4 className='total-credit-text'>Total Credit Hour: {totalCredit}</h4>
+            <hr />
         </div>
     );
 };
