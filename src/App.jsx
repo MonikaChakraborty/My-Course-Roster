@@ -1,4 +1,6 @@
 /* eslint-disable no-unused-vars */
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react'
 
 import './App.css'
@@ -12,6 +14,7 @@ function App() {
      <div className='inter-font'>
      <h1>Course Registration</h1>
      <Home></Home>
+     <ToastContainer/>
      </div>
     
       

@@ -1,5 +1,7 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable no-unused-vars */
+import {toast} from 'react-toastify';
+
 import React, { useEffect, useState } from 'react';
 import './Home.css';
 import dollar from '../../assets/images/dollar-sign 1.svg';
@@ -24,19 +26,26 @@ const Home = () => {
         const isExist = selectedCourses.find(item => item.course_name == course.course_name);
 
         let count = course.credit;
+       
         if(isExist){
-            return alert('Already selected');
+            return toast.warning('This course is already in your selection', {
+                position: toast.POSITION.TOP_CENTER,
+                autoClose: 3000,
+              });
         }else{
-
+            
             selectedCourses.forEach(item => {
                 count = count + item.credit;
             })
             // console.log(count);
             const creditRemaining = 20-count;
 
-            if(count>20){
-                return alert ("not granted");
-            }
+            if (count > 20) {
+                return toast.error('Credit limit can not exceed 20 hours', {
+                  position: toast.POSITION.TOP_CENTER,
+                  autoClose: 2000,
+                });
+              } 
             setTotalCredit(count);
             setRemaining(creditRemaining);
             setSelectedCourses([...selectedCourses, course]);

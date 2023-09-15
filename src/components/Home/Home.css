@@ -1,8 +1,14 @@
+h1{
+    margin-bottom: 32px;
+}
+.container{
+    margin-bottom: 80px;
+}
 .card{
     width: 270px;
     height: 400px;
     background-color: #FFF;
-    border: 1px solid gray;
+    border: none;
     border-radius: 12px;
     padding: 16px;
 }
@@ -10,9 +16,6 @@
 .photo{
     width: 270px;
     height: 144px;
-    /* padding-top: 16px;
-    padding-left: 16px;
-    padding-right: 16px; */
 }
 
 .card-title{
@@ -49,8 +52,6 @@
     width: 25px;
     height: 25px;
     margin-top: 18px;
-
-    /* height: 30px; */
 }
 
 .card-btn{
@@ -60,8 +61,6 @@
     font-size: 18px;
     font-weight: 600;
     width: 100%;
-    /* padding-left: 18px;
-    padding-right: 18px; */
     padding-top: 9px;
     padding-bottom: 9px;
     cursor: pointer;
@@ -70,20 +69,18 @@
 
 .home-container{
     display: flex;
-    
 }
 
 .card-container{
     width: 1000px;
     display: flex;
-
     flex-wrap: wrap;
     gap: 15px;
 }
 
 .cart-container{
-    border-radius: 12px;
-    background: #FFF;
+    /* border-radius: 12px; */
+    /* background: #FFF; */
     /* display: flex; */
     /* justify-content: center; */
 }
