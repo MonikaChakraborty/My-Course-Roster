@@ -4,9 +4,11 @@ import React, { useEffect, useState } from 'react';
 import './Home.css';
 import dollar from '../../assets/images/dollar-sign 1.svg';
 import frame from '../../assets/images/Frame.png'
+import Cart from '../Cart/Cart';
 
 const Home = () => {
     const [allCourses, setAllCourses] = useState([]);
+    const [selectedCourses, setSelectedCourses] = useState([]);
 
 
     useEffect(() => {
@@ -15,7 +17,19 @@ const Home = () => {
         .then(data => setAllCourses(data));
     }, []);
 
-    console.log(allCourses);
+    const handleSelectCourse = (course) => {
+        // console.log(...selectedCourses)
+        const isExist = selectedCourses.find(item => item.course_name == course.course_name);
+        if(isExist){
+            return alert('Already selected');
+        }else{
+            setSelectedCourses([...selectedCourses, course]);
+        }
+        
+    }
+
+    // console.log(allCourses);
+    // console.log(selectedCourses);
     return (
         <div className='container'>
             <div className='home-container'>
@@ -38,7 +52,7 @@ const Home = () => {
                             <h5>Credit: {course.credit}hr</h5>
                             </div>
                         </div>
-                        <button className='card-btn'>Select</button>
+                        <button onClick={() => handleSelectCourse(course)} className='card-btn'>Select</button>
                     </div>
                     ))
                    }
@@ -46,7 +60,7 @@ const Home = () => {
                 </div>
 
                 <div className="cart-container">
-                    <h1>This is cart</h1>
+                    <Cart selectedCourses={selectedCourses}></Cart>
                 </div>
 
             </div>
