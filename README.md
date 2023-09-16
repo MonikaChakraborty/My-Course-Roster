@@ -38,6 +38,7 @@ The 'totalCredit' state variable is initialized with a value of '0' using 'useSt
 
 - remaining: 
 This state stores the number of credit hours remaining.
+
 This state variable, 'remaining', is initially set to 20 (assuming a maximum credit limit of 20 hours). It is updated when a course is added to the 'selectedCourses' array. The remaining credit hours are calculated and set using 'setRemaining(creditRemaining').
 
 
