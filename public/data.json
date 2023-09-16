@@ -4,62 +4,62 @@
     "course_name": "Introduction to C Programming",
     "credit": 1,
     "price": 15000,
-    "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    "details": "Learn C basics, data types, and control structures to begin programming with C language."
   },
   {
     "image": "https://i.ibb.co/xzB6WFZ/Rectangle-2-3.png",
     "course_name": "Introduction to Algorithms",
     "credit": 2,
     "price": 25000,
-    "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    "details": "Explore algorithms, analyze their efficiency, and solve problems using algorithms in various domains."
   },
   {
     "image": "https://i.ibb.co/BNtmXHy/Rectangle-2-4.png",
     "course_name": "Introduction to C++ for DSA",
     "credit": 10,
     "price": 10000,
-    "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    "details": "Understand C++ fundamentals for implementing data structures and algorithms effectively."
   },
   {
     "image": "https://i.ibb.co/68Y4z49/Rectangle-3.png",
     "course_name": "Basic Data Structures",
     "credit": 5,
     "price": 35000,
-    "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    "details": "Study essential data structures like arrays, linked lists, and trees, and their applications in programming."
   },
   {
     "image": "https://i.ibb.co/PZyB3Ts/Rectangle-2.png",
     "course_name": "Introduction to OOP Python",
     "credit": 5,
     "price": 19000,
-    "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    "details": "Dive into Python's object-oriented programming, classes, inheritance, and encapsulation for software development."
   },
   {
     "image": "https://i.ibb.co/rZtctxn/Rectangle-2-5.png",
     "course_name": "Software Engineering",
     "credit": 2,
     "price": 23000,
-    "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    "details": "Learn software development methodologies, requirements engineering, and project management techniques in software engineering."
   },
   {
     "image": "https://i.ibb.co/YTcrK59/Rectangle-3-1.png",
     "course_name": "AWS, Cloud Computing",
     "credit": 1,
     "price": 15000,
-    "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    "details": "Discover Amazon Web Services (AWS) and cloud computing concepts for scalable and efficient cloud-based solutions."
   },
   {
     "image": "https://i.ibb.co/QcZGqfh/Rectangle-2-1.png",
     "course_name": "Database (MySQL)",
     "credit": 5,
     "price": 19000,
-    "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    "details": "Gain insights into MySQL database management, SQL queries, and database design for data-driven applications."
   },
   {
     "image": "https://i.ibb.co/jT3gyd1/Rectangle-2-6.png",
     "course_name": "Problem-Solving Part",
     "credit": 2,
     "price": 23000,
-    "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    "details": "Enhance problem-solving skills, tackle real-world challenges, and practice critical thinking for diverse problem domains."
   }
 ]
