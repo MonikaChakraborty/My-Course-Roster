@@ -12,7 +12,7 @@ const Home = () => {
     const [allCourses, setAllCourses] = useState([]);
     const [selectedCourses, setSelectedCourses] = useState([]);
     const [totalCredit, setTotalCredit] = useState(0);
-    const [remaining, setRemaining] = useState(0);
+    const [remaining, setRemaining] = useState(20);
 
 
     useEffect(() => {
@@ -45,7 +45,7 @@ const Home = () => {
                   position: toast.POSITION.TOP_CENTER,
                   autoClose: 2000,
                 });
-              } 
+              }
             setTotalCredit(count);
             setRemaining(creditRemaining);
             setSelectedCourses([...selectedCourses, course]);
@@ -53,7 +53,7 @@ const Home = () => {
         
     }
 
-    // console.log(allCourses);
+    console.log(allCourses);
     // console.log(selectedCourses);
     return (
         <div className='container'>
@@ -62,7 +62,7 @@ const Home = () => {
                    {
                     allCourses.map((course) => (
                         <div key={course.course_name} className='card'>
-                        <img className='photo' src={course.image} alt="" />
+                        <img className='card-image' src={course.image} alt="" />
 
                         <h3 className='card-title'>{course.course_name}</h3>
 
@@ -73,7 +73,7 @@ const Home = () => {
                             <h5>Price: {course.price}</h5>
                             </div>
                             <div className='card-credit'>
-                            <img className='frame-photo' src={frame} alt="" />
+                            <img src={frame} alt="" />
                             <h5>Credit: {course.credit}hr</h5>
                             </div>
                         </div>

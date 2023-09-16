@@ -4,6 +4,18 @@ h1{
 .container{
     margin-bottom: 80px;
 }
+
+.home-container{
+    display: flex;
+}
+
+.card-container{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
 .card{
     width: 270px;
     height: 400px;
@@ -13,7 +25,7 @@ h1{
     padding: 16px;
 }
 
-.photo{
+.card-image{
     width: 270px;
     height: 144px;
 }
@@ -28,12 +40,6 @@ h1{
     color: rgba(28, 27, 27, 0.60);font-size: 14px;
     font-weight: 400;
 }
-.card-footer{
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 24px;
-    
-}
 
 .card-price img{
     margin-right: 5px;
@@ -41,22 +47,32 @@ h1{
 
 .card-credit img{
     margin-right: 8px;
+    width: 25px;
+    height: 25px;
+    margin-top: 18px;
 }
+
 .card-price, .card-credit{
     display: flex;
     color: rgba(28, 27, 27, 0.60);font-size: 16px;
     font-weight: 500;
 }
 
-.frame-photo{
-    width: 25px;
-    height: 25px;
-    margin-top: 18px;
+.card-footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 24px;
+    
 }
+
+/* .frame-photo{
+   
+} */
 
 .card-btn{
     border-radius: 8px;
-    border: 1px solid #2F80ED;background: #2F80ED;
+    border: 1px solid #2F80ED;
+    background: #2F80ED;
     color: #FFF;
     font-size: 18px;
     font-weight: 600;
@@ -64,23 +80,4 @@ h1{
     padding-top: 9px;
     padding-bottom: 9px;
     cursor: pointer;
-}
-
-
-.home-container{
-    display: flex;
-}
-
-.card-container{
-    width: 1000px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.cart-container{
-    /* border-radius: 12px; */
-    /* background: #FFF; */
-    /* display: flex; */
-    /* justify-content: center; */
 }

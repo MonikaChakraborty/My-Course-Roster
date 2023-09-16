@@ -5,16 +5,18 @@ import './Cart.css';
 
 
 const Cart = ({selectedCourses, totalCredit, remaining}) => {
-    console.log(selectedCourses)
+    // console.log(selectedCourses)
     return (
         <div className='cart'>
+            
             <h4 className='credit-remaining-text'>Credit Hour Remaining {remaining} hr</h4>
             <hr />
             <h4 className='cart-title'>Course Name:</h4>
-            <ol className='names'>
+            <ol className='course-name-list'>
                 {
                     selectedCourses.map((course, index) => (
-                        <li  className='ol-list' key={index}>{course.course_name}</li>
+                        <li  className='course-list' key={index}>{course.course_name}
+                        </li>
                     ))
                 }
             </ol>
